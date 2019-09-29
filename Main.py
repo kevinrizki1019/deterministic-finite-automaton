@@ -4,11 +4,25 @@ import State
 if __name__ == "__main__":
     MasukanUser = input("Jalankan Permainan (YA/TIDAK)? ")
     if (MasukanUser == "YA"): 
-        print("*********************************")
-        print("*                               *")
-        print("*  MULAI PERMAINAN THE SIMS KW  *")
-        print("*                               *")
-        print("*********************************")
+        print('             @@@@@@@@@@@@**&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
+        print('             @@@@@@@*************@@@@@@@@@@@&&&&@@@@@@@@@@@@@@@@@@@@@@@@')
+        print('             @@@@@@//////////////@@@@@@@@@@//////@@@@@@@@@@@@@@////////@')
+        print('             @@@@@//////@@@@@@/@@@//////@@@//////@@@/////@@@////////////')
+        print('             @@@@@//////@@@@@@@@@@//////@@@//////@@//////(@/////////////')
+        print('             @@@@@(//////////@@@@@//////@@////////@///////@/////#@@@@@@@')
+        print('             @@@@@@@(((((((((((((@((((((@@((((((((((((((((@(((((((((#@@@')
+        print('             /////@&@@(@((((((((((@(((((@@(((((((((((((((((@((((((((((((')
+        print('             @@(@(@(#((@@@@@((((((@(((((@((((((((((((((((((@@@@@((((((((')
+        print('             @@@@@@@%@@@@@@@((((((@(((((@(((((@((((((((((((@@#@@@@@#((((')
+        print('             @@@@@@###############@#####@#####@######@##################')
+        print('             @@@@@##############@@############@######@@################@')
+
+        print('')
+        print("                         *********************************")
+        print("                         *                               *")
+        print("                         *  MULAI PERMAINAN THE SIMS KW  *")
+        print("                         *                               *")
+        print("                         *********************************")
         while (not Action.PermainanSelesai()):
             Action.TunjukkanStatus()
             Aksi = input("Masukkan Aksi: ")
@@ -21,7 +35,7 @@ if __name__ == "__main__":
             elif (Aksi == "Makan Pizza"):
                 Action.MakanPizza()
             elif (Aksi == "Makan Steak and Beans"):
-                Action.MakanSteakAndBans()
+                Action.MakanSteakAndBeans()
             elif (Aksi == "Minum Air"):
                 Action.MinumAir()
             elif (Aksi == "Minum Kopi"):
@@ -52,3 +66,4 @@ if __name__ == "__main__":
                 print("Aksi tidak valid")
             print("")
         Action.CekStatusPermainanSelesai()
+
