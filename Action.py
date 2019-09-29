@@ -1,7 +1,9 @@
 from State import hygiene, energy, fun, state 
 
-def status():
-    print(state[hygiene//5][energy//5][fun//5])
+def TunjukkanStatus():
+    print("Hygiene =", hygiene)
+    print("Energy =", energy)
+    print("Fun =", fun)
 
 def TidurSiang():
     global energy
@@ -85,3 +87,12 @@ def MembacaNovel():
     global fun, energy 
     fun += 10
     energy -= 5
+
+def PermainanSelesai():
+    return ((hygiene == 15) and (energy == 15) and (fun == 15)) or ((hygiene == 0) and (energy == 0) and (fun ==0))
+
+def CekStatusPermainanSelesai():
+    if ((hygiene == 15) and (energy == 15) and (fun ==15)):
+        print("Permainan Selesai! Anda Menang")
+    else:  #((hygiene == 0) and (energy == 0) and (fun ==0))
+        print("Permainan Selesai! Anda Mati dan Kalah")
