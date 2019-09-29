@@ -1,5 +1,8 @@
 from State import hygiene, energy, fun, state 
 
+def status():
+    print(state[hygiene//5][energy//5][fun//5])
+
 def TidurSiang():
     global energy
     energy += 10
