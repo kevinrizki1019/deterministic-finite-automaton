@@ -1,3 +1,8 @@
+import state.py
+
+def status():
+    print(state[hygiene//5][energy//5][fun//5])
+
 def TidurSiang():
 
 def TidurMalam():
