@@ -4,7 +4,7 @@
 # TUGAS BESAR TEORI BAHASA FORMAL DAN AUTOMATA 1
 # THE SIMS SIMULATOR, Link: https://docs.google.com/document/d/1Te3TjxvMsjGSek1sFNQm1gMwnQhB4o2JZIFb8brC_KQ/edit
 
-from State import hygiene, energy, fun, state 
+from State import hygiene, energy, fun
 
 def TunjukkanStatus():
     """
@@ -248,25 +248,3 @@ def CekStatusPermainanSelesai():
         print("Permainan Selesai! Anda Menang")
     else:  #((hygiene == 0) and (energy == 0) and (fun ==0))
         print("Permainan Selesai! Anda Mati dan Kalah")
-
-def Help():
-    print(" ")
-    print("Masukkan yang mungkin:")
-    print("- Tidur Siang")
-    print("- Tidur Malam")
-    print("- Makan Hamburger")
-    print("- Makan Pizza")
-    print("- Makan Steak and Beans")
-    print("- Minum Air")
-    print("- Minum Kopi")
-    print("- Minum Jus")
-    print("- Buang Air Kecil")
-    print("- Buang Air Besar")
-    print("- Bersosialisasi ke Kafe")
-    print("- Bermain Media Sosial")
-    print("- Bermain komputer")
-    print("- Mandi")
-    print("- Cuci Tangan")
-    print("- Mendengarkan Musik di Radio")
-    print("- Membaca Koran")
-    print("- Membaca Novel")

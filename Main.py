@@ -71,8 +71,6 @@ if __name__ == "__main__":
                 Action.MembacaKoran()
             elif (Aksi == "Membaca Novel"):
                 Action.MembacaNovel()
-            elif (Aksi == "Help"):
-                Action.Help()
             else:
                 print("Aksi tidak valid")
             print("")
