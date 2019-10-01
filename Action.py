@@ -132,7 +132,7 @@ def BuangAirBesar():
     tidak dilakukan proses jika penambahan nilai lebih dari nilai maksimum  
     tidak dilakukan proses jika pengurangan nilai kurang dari nilai minimum  
     """
-    global hygiene
+    global hygiene, energy
     if (not CekStatusLebih(tambah_kebersihan = 10) and not CekStatusKurang(kurang_energi = 5)):
         hygiene += 10
         energy -= 5
@@ -248,3 +248,27 @@ def CekStatusPermainanSelesai():
         print("Permainan Selesai! Anda Menang")
     else:  #((hygiene == 0) and (energy == 0) and (fun ==0))
         print("Permainan Selesai! Anda Mati dan Kalah")
+
+def ShowPossibleAction():
+    print("")
+    print("AKSI YANG BISA DILAKUKAN: ")
+    print("1. Tidur Siang")
+    print("2. Tidur Malam")
+    print("3. Makan Hamburger")
+    print("4. Makan Pizza")
+    print("5. Makan Steak and Beans")
+    print("6. Minum Air")
+    print("7. Minum Kopi")
+    print("8. Minum Jus")
+    print("9. Buang Air Kecil")
+    print("10. Buang Air Besar")
+    print("11. Besosialisasi ke Kafe")
+    print("12. Bermain Media Sosial")
+    print("13. Bermain komputer")
+    print("14. Mandi")
+    print("15. Cuci Tangan")
+    print("16. Mendengarkan Musik di Radio")
+    print("17. Membaca Koran")
+    print("18. Membaca Novel")
+    print(" ______________")
+    print(" ")

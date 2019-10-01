@@ -32,6 +32,7 @@ if __name__ == "__main__":
         print("                         *  MULAI PERMAINAN THE SIMS KW  *")
         print("                         *                               *")
         print("                         *********************************")
+        Action.ShowPossibleAction()
         while (not Action.PermainanSelesai()):
             Action.TunjukkanStatus()
             Aksi = input("Masukkan Aksi: ")
@@ -74,6 +75,7 @@ if __name__ == "__main__":
             else:
                 print("Aksi tidak valid")
             print("")
+        Action.TunjukkanStatus()
         Action.CekStatusPermainanSelesai()
         
 

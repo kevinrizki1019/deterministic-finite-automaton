@@ -5,6 +5,7 @@
 # THE SIMS SIMULATOR, Link: https://docs.google.com/document/d/1Te3TjxvMsjGSek1sFNQm1gMwnQhB4o2JZIFb8brC_KQ/edit
 
 ''' Atribut yang merepresentasikan state pada suatu waktu '''
+'''  Nilai diinisiasi sesuai dengan start state pada DFA  '''
 hygiene = int(0)
 energy = int(10)
 fun = int(0)
